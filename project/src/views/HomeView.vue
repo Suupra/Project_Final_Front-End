@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div >
+    <SideBar />
+    <Feed />
+    <Trends />
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import SideBar from '../components/SideBar.vue'
+import Feed from '../components/Feed.vue'
+import Trends from '../components/Trends.vue'
 </script>
+
+<style>
+body {
+  background-color: #000000;
+}
+</style>
